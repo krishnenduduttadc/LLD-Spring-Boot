@@ -1,5 +1,5 @@
 Sample API Usage
-▶ POST localhost:8080/splitwise/expense 
+▶ POST localhost:8080/splitwise/expense
 (Equal split)
 {
   "description": "Dinner",
