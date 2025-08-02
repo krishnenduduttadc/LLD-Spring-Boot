@@ -1,0 +1,22 @@
+Sample Request
+POST localhost:8080/api/invoice/generate
+{
+  "customerId": "c1",
+  "name": "Alice",
+  "email": "alice@example.com",
+  "items": [
+    { "name": "Book", "unitPrice": 200, "quantity": 2 },
+    { "name": "Pen", "unitPrice": 20, "quantity": 5 }
+  ],
+  "taxRate": 0.18
+}
+✅ Response
+{
+  "invoiceId": "d5e0...",
+  "customer": { "customerId": "c1", "name": "Alice", "email": "alice@example.com" },
+  "items": [...],
+  "taxRate": 0.18,
+  "subtotal": 500,
+  "taxAmount": 90,
+  "totalAmount": 590
+}

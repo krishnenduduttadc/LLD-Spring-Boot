@@ -1,0 +1,8 @@
+Sample Requests
+POST localhost:8080/api/user/create?userId=u1&name=Alice
+
+POST localhost:8080/api/post/create?userId=u1&content=Hello+World
+
+POST localhost:8080/api/follow?followerId=u2&followeeId=u1
+
+GET localhost:8080/api/feed?userId=u2&limit=10&offset=0
