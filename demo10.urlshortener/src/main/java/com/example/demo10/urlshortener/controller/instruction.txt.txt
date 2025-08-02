@@ -1,0 +1,14 @@
+Sample API Requests
+🔗 Shorten a URL
+POST localhost:8080/api/url/shorten?originalUrl=https://www.google.com
+
+Response:
+{
+  "shortUrl": "http://short.ly/b",
+  "originalUrl": "https://www.google.com"
+}
+🔁 Redirect
+GET localhost:8080/api/url/b
+
+Response: 302 FOUND → Redirects to https://www.google.com
+

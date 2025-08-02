@@ -1,0 +1,9 @@
+Example REST Usage
+POST localhost:8080/api/publish?topic=news&message=Hello+World
+
+GET localhost:8080/api/topics
+
+Output:
+
+[Subscriber A] received from 'news': Hello World
+[Subscriber B] received from 'news': Hello World
