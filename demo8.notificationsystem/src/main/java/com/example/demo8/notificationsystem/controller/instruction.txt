@@ -1,0 +1,12 @@
+ Sample Requests (Postman or CURL)
+🔹 Send Notification (static user u1)
+POST localhost:8080/api/notification/send
+
+{
+  "notificationId": "n1",
+  "userId": "u1",
+  "message": "Welcome to the platform!",
+  "channelType": "EMAIL"
+}
+🔹 Send via query params
+POST localhost:8080/api/notification/send/dynamic?userId=u1&message=Hello+via+SMS&channel=SMS
