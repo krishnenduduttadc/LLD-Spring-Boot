@@ -1,0 +1,32 @@
+Sample API Calls
+▶ GET localhost:8080/booking/shows
+
+[
+  {
+    "showId": "S1",
+    "movie": "Inception",
+    "startTime": "2025-08-02T19:45:00",
+    "availableSeats": ["A1", "A2", "A3", "A4", "A5"]
+  }
+]
+▶ POST localhost:8080/booking/book
+
+{
+  "userId": "u1",
+  "showId": "S1",
+  "seatNumbers": ["A1", "A2"]
+}
+🟢 Response:
+{
+  "bookingId": "b123",
+  "showId": "S1",
+  "seats": ["A1", "A2"],
+  "bookingTime": "2025-08-02T17:45:00"
+}
+▶ GET localhost:8080/booking/{bookingId}
+{
+  "bookingId": "b123",
+  "showId": "S1",
+  "seats": ["A1", "A2"],
+  "bookingTime": "2025-08-02T17:45:00"
+}

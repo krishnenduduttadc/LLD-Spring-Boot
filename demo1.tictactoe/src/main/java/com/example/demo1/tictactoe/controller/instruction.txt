@@ -1,0 +1,28 @@
+Sample API Testing
+▶ 1. Start Game
+POST localhost:8080/game/start?player1=Alice&player2=Bob
+
+Response:
+
+Game started!
+
+▶ 2. Make Move
+POST localhost:8080/game/move?row=0&col=0
+
+Response:
+
+
+Move successful! Next: Bob
+▶ 3. Check Status
+GET localhost:8080/game/status
+
+Response (JSON):
+
+
+{
+  "board": {
+    "board": [[...], [...], [...]]
+  },
+  "status": "IN_PROGRESS",
+  "winner": null
+}

@@ -1,0 +1,32 @@
+ Sample API Calls
+▶ POST localhost:8080/parking/entry
+
+{
+  "registrationNumber": "WB10AB1234",
+  "vehicleType": "CAR"
+}
+🟢 Response:
+
+{
+    "ticketId": "56850899-df1e-4578-b2ae-423070b295dd",
+    "slotId": "F1-S1",
+    "vehicleType": "CAR",
+    "entryTime": "2025-08-02T15:34:21.9540021"
+}
+
+▶ POST localhost:8080/parking/exit
+
+{
+  "ticketId": "56850899-df1e-4578-b2ae-423070b295dd"
+}
+🟢 Response:
+
+Parking fee: ₹10
+▶ GET localhost:8080/parking/slots
+🟢 Response:
+
+{
+  "F1-F1-S1": "Occupied by WB10AB1234",
+  "F1-F1-S2": "Free",
+  "F1-F1-S3": "Free"
+}

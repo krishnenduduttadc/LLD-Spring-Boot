@@ -1,0 +1,7 @@
+./mvnw spring-boot:run
+
+Index:
+1: Tic Tac Toe
+2: Vending Machine
+3: Parking lot
+

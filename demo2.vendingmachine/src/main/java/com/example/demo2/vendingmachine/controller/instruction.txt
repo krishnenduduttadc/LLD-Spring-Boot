@@ -1,0 +1,23 @@
+Sample API Calls
+▶ Insert Money
+
+POST localhost:8080/vending/insert
+{
+  "amount": 50
+}
+
+▶ Select Product
+POST localhost:8080/vending/select
+{
+  "productCode": "A1"
+}
+
+▶ Get Stock
+GET localhost:8080/vending/stock
+
+Response:
+{
+  "A1": 4,
+  "B1": 3,
+  "C1": 4
+}

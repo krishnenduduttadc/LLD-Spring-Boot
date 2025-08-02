@@ -1,0 +1,19 @@
+Key Components (Interview-Oriented)
+🎛 State Pattern
+State (interface)
+
+IdleState, HasMoneyState, DispensingState, SoldOutState
+
+📦 Domain Models
+Product (name, code, price)
+
+Inventory (map of product code ➝ product + quantity)
+
+VendingMachine (currentState, inventory, currentMoney)
+
+📡 Spring Boot Layer
+VendingController (API)
+
+VendingService (logic)
+
+DTOs: InsertMoneyRequest, SelectProductRequest
