@@ -1,6 +1,5 @@
 Sample API Calls
 ▶ GET localhost:8080/booking/shows
-
 [
   {
     "showId": "S1",
@@ -10,7 +9,6 @@ Sample API Calls
   }
 ]
 ▶ POST localhost:8080/booking/book
-
 {
   "userId": "u1",
   "showId": "S1",
@@ -23,6 +21,7 @@ Sample API Calls
   "seats": ["A1", "A2"],
   "bookingTime": "2025-08-02T17:45:00"
 }
+
 ▶ GET localhost:8080/booking/{bookingId}
 {
   "bookingId": "b123",
