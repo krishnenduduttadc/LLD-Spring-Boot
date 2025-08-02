@@ -1,0 +1,30 @@
+Sample API Usage
+▶ POST localhost:8080/splitwise/expense 
+(Equal split)
+{
+  "description": "Dinner",
+  "paidByUserId": "u1",
+  "amount": 300,
+  "splitType": "EQUAL",
+  "splits": [
+    { "userId": "u1" },
+    { "userId": "u2" },
+    { "userId": "u3" }
+  ]
+}
+🟢 Response:
+{
+  "expenseId": "exp123",
+  "description": "Dinner",
+  "paidBy": "u1",
+  "totalAmount": 300,
+  "splits": [
+    { "userId": "u1", "amount": 100.0 },
+    { "userId": "u2", "amount": 100.0 },
+    { "userId": "u3", "amount": 100.0 }
+  ]
+}
+▶ GET localhost:8080/splitwise/balances/u2
+{
+  "u1": 100.0
+}
