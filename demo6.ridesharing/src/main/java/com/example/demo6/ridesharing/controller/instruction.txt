@@ -1,0 +1,21 @@
+Sample Requests
+🚘 Register Driver
+POST localhost:8080/api/register/driver
+{
+  "userId": "d1",
+  "name": "Dinesh",
+  "currentLocation": { "latitude": 10, "longitude": 10 }
+}
+🧍 Register Rider
+POST localhost:8080/api/register/rider
+{
+  "userId": "r1",
+  "name": "Ramesh"
+}
+🎯 Create Ride
+POST localhost:8080/api/ride/create
+{
+  "riderId": "r1",
+  "source": { "latitude": 10.1, "longitude": 10.1 },
+  "destination": { "latitude": 15.0, "longitude": 15.0 }
+}

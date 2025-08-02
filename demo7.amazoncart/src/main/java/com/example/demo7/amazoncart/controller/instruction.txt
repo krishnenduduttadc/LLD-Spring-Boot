@@ -1,0 +1,10 @@
+Sample Requests
+📦 Add Product to Cart
+POST localhost:8080/api/cart/u1/add?productId=p1&quantity=2
+
+🧾 View Cart
+GET localhost:8080/api/cart/u1
+
+🛒 Checkout
+POST localhost:8080/api/cart/u1/checkout
+
