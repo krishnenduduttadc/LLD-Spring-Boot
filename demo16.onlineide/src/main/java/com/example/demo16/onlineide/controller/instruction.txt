@@ -1,0 +1,15 @@
+Sample Usage
+🔁 Request
+POST localhost:8080/api/ide/run
+Body (Java):
+
+{
+  "language": "java",
+  "code": "public class Solution { public static void main(String[] args) { System.out.println(\"Hello IDE!\"); } }"
+}
+✅ Response
+{
+  "output": "Hello IDE!\n",
+  "error": "",
+  "exitCode": 0
+}

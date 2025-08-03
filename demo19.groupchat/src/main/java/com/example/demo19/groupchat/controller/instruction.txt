@@ -1,0 +1,19 @@
+Sample API Calls
+Register users
+POST localhost:8080/api/groupchat/user?userId=u1&name=Alice
+POST localhost:8080/api/groupchat/user?userId=u2&name=Bob
+
+Create a group
+POST localhost:8080/api/groupchat/group?groupId=g1&name=Team1
+
+Add members
+POST localhost:8080/api/groupchat/group/g1/add?userId=u1
+POST localhost:8080/api/groupchat/group/g1/add?userId=u2
+
+
+Send message
+POST localhost:8080/api/groupchat/group/g1/send?senderId=u1&content=Hello+Group!
+
+
+View group messages
+GET localhost:8080/api/groupchat/group/g1/messages

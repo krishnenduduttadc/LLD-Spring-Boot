@@ -1,0 +1,19 @@
+ Sample Requests
+1. Add Document
+POST localhost:8080/api/search/add
+{
+  "id": "doc1",
+  "title": "Java Spring Boot",
+  "content": "Spring Boot makes it easy to create RESTful services."
+}
+2. Search
+GET localhost:8080/api/search?query=spring boot
+
+Response:
+[
+  {
+    "id": "doc1",
+    "title": "Java Spring Boot",
+    "content": "Spring Boot makes it easy to create RESTful services."
+  }
+]

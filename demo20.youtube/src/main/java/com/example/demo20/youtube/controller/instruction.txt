@@ -1,0 +1,19 @@
+Sample API Calls
+Register User
+
+POST localhost:8080/api/youtube/user?id=u1&name=Alice
+
+Upload Video
+POST localhost:8080/api/youtube/upload?title=My+Video&description=Learn+Spring&uploaderId=u1&tags=spring,java
+
+View Video
+GET localhost:8080/api/youtube/view/3784df1c-0d7a-4f08-b0f6-91bd9b644a64
+
+Trending
+GET localhost:8080/api/youtube/trending?top=3
+
+Search
+GET localhost:8080/api/youtube/search?keyword=spring
+
+User’s Uploaded Videos
+GET localhost:8080/api/youtube/user/u1/videos

@@ -1,0 +1,10 @@
+Sample Requests
+1. Register Users
+POST localhost:8080/api/chat/register?userId=u1&name=Alice
+POST localhost:8080/api/chat/register?userId=u2&name=Bob
+
+2. Send Message
+POST localhost:8080/api/chat/send?senderId=u1&receiverId=u2&content=Hi+Bob!
+
+3. Get Chat History
+GET localhost:8080/api/chat/messages?user1=u1&user2=u2

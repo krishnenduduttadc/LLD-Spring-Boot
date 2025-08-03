@@ -1,0 +1,15 @@
+Sample API Flow
+Create User:
+POST localhost:8080/api/dropbox/user?id=u1&name=Alice
+
+Create Root Folder:
+POST localhost:8080/api/dropbox/folder?name=root&ownerId=u1
+
+Upload File:
+POST localhost:8080/api/dropbox/file?folderId=cb9ab4b4-3aa7-4855-adec-eb26d5eae9b3&fileName=doc.txt&ownerId=u1&content=Hello+world
+
+List Files in Folder:
+GET localhost:8080/api/dropbox/folder/cb9ab4b4-3aa7-4855-adec-eb26d5eae9b3/files
+
+Get Latest File Version:
+GET localhost:8080/api/dropbox/file/d8acbc6d-cd2c-451c-8fb4-58542b0b8318/latest

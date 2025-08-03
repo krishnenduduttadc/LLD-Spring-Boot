@@ -1,0 +1,12 @@
+Sample Usage
+1. Register a Job
+
+POST localhost:8080/api/jobs/register?name=testJob&command=echo+Hello+World&interval=10&retries=2
+2. View All Jobs
+
+GET localhost:8080/api/jobs
+3. Job Execution Logs
+Check terminal logs:
+
+
+[Running] echo Hello World
