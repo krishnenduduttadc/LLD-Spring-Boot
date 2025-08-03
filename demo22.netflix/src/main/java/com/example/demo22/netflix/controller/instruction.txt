@@ -1,0 +1,15 @@
+Sample API Calls
+Register user
+POST localhost:8080/api/netflix/user?id=u1&name=Alice
+Upload video
+POST localhost:8080/api/netflix/upload?title=Dark&language=English&genre=THRILLER&tags=netflix,crime
+Watch a video
+POST localhost:8080/api/netflix/watch?userId=u1&videoId=<videoId>
+Trending
+GET localhost:8080/api/netflix/trending?limit=3
+User watch history
+GET localhost:8080/api/netflix/user/u1/history
+Search
+GET localhost:8080/api/netflix/search?keyword=crime
+Filter by genre
+GET localhost:8080/api/netflix/genre?genre=DRAMA

@@ -1,0 +1,11 @@
+ Sample API Usage
+Register user
+POST localhost:8080/api/payments/user?id=u1&name=Alice
+Register merchant
+POST localhost:8080/api/payments/merchant?id=m1&name=Amazon
+Initiate payment
+POST localhost:8080/api/payments/initiate?userId=u1&merchantId=m1&amount=99.99&idempotencyKey=txn123
+Confirm payment
+POST localhost:8080/api/payments/confirm?paymentId=ea3b2798-d1cc-4f20-b1fd-78bb0e42ce40&success=true
+View status
+GET localhost:8080/api/payments/ea3b2798-d1cc-4f20-b1fd-78bb0e42ce40

@@ -21,3 +21,6 @@ Index:
 18: jobscheduler
 19: WhatsApp
 20: YouTube
+21: Payment gateway
+22: Netflix
+23: Google docs

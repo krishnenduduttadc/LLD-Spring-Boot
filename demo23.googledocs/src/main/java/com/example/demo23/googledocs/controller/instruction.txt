@@ -1,0 +1,13 @@
+ Sample API Usage
+Create User
+POST localhost:8080/api/docs/user?id=u1&name=Alice
+Create Document
+POST localhost:8080/api/docs/create?docId=d1&title=Design&content=Start+here&ownerId=u1
+Grant Access
+POST localhost:8080/api/docs/grant?docId=d1&userId=u2&access=EDITOR
+Edit Document
+POST localhost:8080/api/docs/edit?docId=d1&userId=u2&content=New+content+added
+View History
+GET localhost:8080/api/docs/history/d1
+Get Document
+GET localhost:8080/api/docs/get?docId=d1&userId=u1
