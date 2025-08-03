@@ -1,0 +1,32 @@
+
+Create User
+POST localhost:8080/api/exam/user?userId=u1&name=Alice&isAdmin=true
+Create Test
+
+POST localhost:8080/api/exam/test
+{
+  "testId": "test123",
+  "title": "Java Basics",
+  "durationMinutes": 30,
+  "questions": [
+    {
+      "questionId": 1,
+      "questionText": "What is JVM?",
+      "correctOptionId": 2,
+      "options": [
+        { "optionId": 1, "text": "JDK" },
+        { "optionId": 2, "text": "Java Virtual Machine" },
+        { "optionId": 3, "text": "JavaScript" }
+      ]
+    }
+  ]
+}
+Get Questions
+GET localhost:8080/api/exam/questions?testId=test123
+Submit Answers
+POST localhost:8080/api/exam/submit?userId=u2&testId=test123
+{
+  "1": 2
+}
+View Submissions
+GET localhost:8080/api/exam/submissions?testId=test123
