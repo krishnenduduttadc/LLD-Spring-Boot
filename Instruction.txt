@@ -25,3 +25,9 @@ Index:
 22: Netflix
 23: Google docs
 24: Online exam
+25: Calander booking
+26: Zoom/Google meetsystem
+27: Github repo
+28: LinkedIn
+29: Quora
+30: Airbnb

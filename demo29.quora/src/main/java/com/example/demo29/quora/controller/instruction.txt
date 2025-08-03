@@ -1,0 +1,13 @@
+Sample API Flow
+Create User
+POST localhost:8080/api/quora/user?id=u1&name=Krish
+Ask Question
+POST localhost:8080/api/quora/ask?qid=q1&content=What is LLD?&userId=u1&tags=lld,system-design
+Answer
+POST localhost:8080/api/quora/answer?aid=a1&qid=q1&content=LLD means...&userId=u2
+Upvote
+POST localhost:8080/api/quora/upvote?aid=a1
+Search Questions by Tag
+GET localhost:8080/api/quora/questions/by-tag?tag=lld
+Top Answers
+GET localhost:8080/api/quora/answers/top?qid=q1

@@ -1,0 +1,13 @@
+ Sample API Flow
+Create user
+POST localhost:8080/api/github/user?id=u1&name=Krish
+Create repo
+POST localhost:8080/api/github/repo?repoId=repo1&name=DSA&ownerId=u1
+Create branch
+POST localhost:8080/api/github/branch?repoId=repo1&newBranch=feature1&baseBranch=main
+Commit code
+POST localhost:8080/api/github/commit?repoId=repo1&branch=feature1&commitId=c1&message=init&userId=u1
+Create pull request
+POST localhost:8080/api/github/pr?prId=pr1&repoId=repo1&source=feature1&target=main&userId=u1
+Merge PR
+POST localhost:8080/api/github/pr/merge?prId=pr1

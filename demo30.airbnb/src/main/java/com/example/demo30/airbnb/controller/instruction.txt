@@ -1,0 +1,11 @@
+Sample API Flow
+Create User
+POST localhost:8080/api/airbnb/user?id=u1&name=Alice
+List Property
+POST localhost:8080/api/airbnb/property?id=p1&hostId=u1&title=Cozy Room&city=Delhi&price=999
+Search
+GET localhost:8080/api/airbnb/search?city=Delhi&start=2025-09-01&end=2025-09-03
+Book
+POST localhost:8080/api/airbnb/book?bookingId=b1&guestId=u2&propertyId=p1&start=2025-09-01&end=2025-09-03
+View Bookings
+GET localhost:8080/api/airbnb/bookings?userId=u2

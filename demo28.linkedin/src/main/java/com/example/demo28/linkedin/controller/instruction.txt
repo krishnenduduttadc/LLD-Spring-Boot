@@ -1,0 +1,14 @@
+Sample API Usage
+Create User
+POST localhost:8080/api/linkedin/user?id=u1&name=Alice&headline=Java Dev
+    localhost:8080/api/linkedin/user?id=u2&name=Bob&headline=Net Dev
+Connect Users
+POST localhost:8080/api/linkedin/connect?user1=u1&user2=u2
+Post Feed
+POST localhost:8080/api/linkedin/post?postId=p1&userId=u1&content=Hello LinkedIn!
+View Feed
+GET localhost:8080/api/linkedin/feed?userId=u1
+Post Job
+POST localhost:8080/api/linkedin/job?jobId=j1&title=SDE&company=Amazon&userId=u1
+Apply Job
+POST localhost:8080/api/linkedin/apply?appId=a1&jobId=j1&userId=u2

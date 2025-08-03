@@ -1,0 +1,10 @@
+ Sample API Usage
+Register User
+POST localhost:8080/api/calendar/user?id=u1&name=Alice
+Schedule Meeting
+POST localhost:8080/api/calendar/meeting?meetingId=m1&title=Sync&start=2025-08-02T11:00&end=2025-08-02T12:00&organizerId=u1
+Body: ["u2", "u3"]
+Respond to Invite
+POST localhost:8080/api/calendar/rsvp?meetingId=m1&userId=u2&status=ACCEPTED
+Get Calendar
+GET localhost:8080/api/calendar/calendar?userId=u2

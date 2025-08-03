@@ -1,0 +1,16 @@
+Sample Flow
+Create User
+
+POST localhost:8080/api/meet/user?id=u1&name=Alice
+Schedule Meeting
+POST localhost:8080/api/meet/schedule?meetingId=m1&title=Design&start=2025-08-02T11:00&hostId=u1
+Join Meeting
+POST localhost:8080/api/meet/join?meetingId=m1&userId=u2
+Assign Co-host
+POST localhost:8080/api/meet/assign-cohost?meetingId=m1&hostId=u1&targetUserId=u2
+Remove User
+POST localhost:8080/api/meet/remove?meetingId=m1&hostId=u1&targetUserId=u2
+End Meeting
+POST localhost:8080/api/meet/end?meetingId=m1&hostId=u1
+View User's Meetings
+GET localhost:8080/api/meet/meetings?userId=u1
